@@ -6,9 +6,9 @@ export default function Footer() {
   <div className="footer">
     <div className="container flex flex-sb flex-wrap flex-left">
         <div className="footer_logo">
-            <h2>VBMBLOGS</h2>
-            <h4>&copy; 2024 All Rights Reserved.</h4>
-            <h3>Coded By <span>@vbmcoder</span></h3>
+            <h2>TechBlogs</h2>
+            <h4>&copy; 2025 All Rights Reserved.</h4>
+            <h3>Coded By <span>@Rangeet</span></h3>
         </div>
 
         <div className="q_links">

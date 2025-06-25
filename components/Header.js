@@ -98,7 +98,7 @@ export default function Header() {
    <div className="header_sec">
     <div className="container header">
         <div className="logo">
-            <Link href="/"><h1>VBMBLOGS</h1></Link>
+            <Link href="/"><h1>TechBLOGS</h1></Link>
         </div>
         <div className="searchbar">
         <FaSearch />            
@@ -167,8 +167,8 @@ export default function Header() {
 
     <div className={ aside? `navlist_mobile open` : `navlist_mobile` }>
         <div className="navlist_m_title flex flex_sb">
-            <h1>TECHBLOGS</h1>
-            <button onClick={asideClose}><HiXMark/></button>
+            <h1>TechBLOGS</h1>
+            <button style={{margin:'10px'}} onClick={asideClose}><HiXMark/></button>
         </div>
         <hr />
         <h3 className='mt-3'>Main Menu</h3>

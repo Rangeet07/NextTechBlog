@@ -1,7 +1,12 @@
 import axios from 'axios';
+import Link from 'next/link';
 import { useRouter } from 'next/router'
 import React, { Children, useEffect, useState } from 'react'
+import { AiOutlineDeploymentUnit } from 'react-icons/ai';
+import { FaGithub, FaHtml5, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FiDatabase } from 'react-icons/fi';
 import { HiH1 } from 'react-icons/hi2'
+import { TbBrandNextjs } from 'react-icons/tb';
 import ReactMarkdown from "react-markdown"
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import {allyDark} from "react-syntax-highlighter/dist/cjs/styles/prism"
@@ -115,8 +120,59 @@ export default function blogPage() {
                              <div className="image_bg_top1"></div>
                         </div>
                     </div>
+                    <h3>Rangeet Nandy</h3>
+                    <h4>App developer</h4>
+                    <div className="social_talks flex flex-center gap-1 mt-2">
+                        <div className="st_icon">
+                             <FaGithub/>
+                        </div>
+                        <div className="st_icon">
+                             <FaTwitter/>
+                        </div>
+                        <div className="st_icon">
+                            <FaInstagram/>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
+    <div className="topics_sec">
+              <h2>Topics</h2>
+              <div className="topics_list">
+                <Link href='topics/htmlcssjs'>
+                <div className="topics">
+                  <div className="flex flex-center topics_svg">
+                    <FaHtml5/>
+                  </div>
+                  <h3>Html, Css & JavaScript</h3>
+                </div>
+                </Link>
+                <Link href='topics/reactjs'>
+                <div className="topics">
+                  <div className="flex flex-center topics_svg">
+                    <TbBrandNextjs/>
+                  </div>
+                  <h3>Next Js, React Js</h3>
+                </div>
+                </Link>
+                <Link href='topics/database'>
+                <div className="topics">
+                  <div className="flex flex-center topics_svg">
+                    <FiDatabase/>
+                  </div>
+                  <h3>Databases</h3>
+                </div>
+                </Link>
+                <Link href='topics/deployment'>
+                <div className="topics">
+                  <div className="flex flex-center topics_svg">
+                    <AiOutlineDeploymentUnit/>
+                  </div>
+                  <h3>Deployment</h3>
+                </div>
+                </Link>
+              </div>
+            </div>           
+             </div>
         </div>
 
     </div>
