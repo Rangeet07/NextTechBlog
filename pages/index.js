@@ -104,7 +104,7 @@ const allblog = alldata.length;
                     <div className="blogtag">{blog.tags[0]}</div>
                     </Link>
                     <Link href={`/blog/${blog.slug}`}><h3>{blog.title}</h3></Link>
-                    <p>{blog.description.substring(0,100)}</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic sequi veritatis eveniet cumque, non provident sint culpa tenetur corporis nemo consectetur quasi nesciunt dolor eaque fugit sunt officiis alias!</p>
                     <div className="blogauthor flex gap-1">
                       <div className="bloaimg">
                         {/* <img src="/img/Rangeet.png" alt="coder" /> */}
