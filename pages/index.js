@@ -7,6 +7,7 @@ import { FaHtml5 , FaGithub, FaTwitter, FaInstagram, FaLinkedin} from "react-ico
 import { TbBrandNextjs, TbFileDatabase } from "react-icons/tb";
 import { FiDatabase } from "react-icons/fi";
 import { AiOutlineDeploymentUnit } from "react-icons/ai";
+import BookForm from "@/components/BookForm";
 
 
 
@@ -51,6 +52,7 @@ const allblog = alldata.length;
     const regex = /!\[.*?\]\((.*?)\)/;
     const match = markdownContent.match(regex);
     return match? match[1] : null;
+    
   }
   return (
     <>
@@ -102,13 +104,13 @@ const allblog = alldata.length;
                     <div className="blogtag">{blog.tags[0]}</div>
                     </Link>
                     <Link href={`/blog/${blog.slug}`}><h3>{blog.title}</h3></Link>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat tenetur non ab obcaecati nemo id repellendus assumenda corporis fugiat, repudiandae quaerat quasi tempora natus ad? Natus rerum libero at nemo!</p>
+                    <p>{blog.description.substring(0,100)}</p>
                     <div className="blogauthor flex gap-1">
                       <div className="bloaimg">
                         {/* <img src="/img/Rangeet.png" alt="coder" /> */}
                       </div>
                       <div className="flex flex-col flex-left gap-05">
-                        <h4>Vbm coder</h4>
+                        <h4>Rangeet Nandy</h4>
                         <span>{new Date(blog.createdAt).toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric' })}</span>
 
                       </div>

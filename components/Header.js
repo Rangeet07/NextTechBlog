@@ -98,7 +98,7 @@ export default function Header() {
    <div className="header_sec">
     <div className="container header">
         <div className="logo">
-            <Link href="/"><h1>TechBLOGS</h1></Link>
+            <Link href="/"><h1>TechBlogs</h1></Link>
         </div>
         <div className="searchbar">
         <FaSearch />            
@@ -109,7 +109,7 @@ export default function Header() {
             <ul>
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/">About Me</Link></li>
-                <li><Link href="/">Contact</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
             </ul>
             {/* for mobile phone */}
             <div className="navlist_mobile_ul">
@@ -167,7 +167,7 @@ export default function Header() {
 
     <div className={ aside? `navlist_mobile open` : `navlist_mobile` }>
         <div className="navlist_m_title flex flex_sb">
-            <h1>TechBLOGS</h1>
+            <h1>TechBlogs</h1>
             <button style={{margin:'10px'}} onClick={asideClose}><HiXMark/></button>
         </div>
         <hr />

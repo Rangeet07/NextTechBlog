@@ -80,7 +80,7 @@ export default function TagsPage() {
                         publishedblogs && publishedblogs[0]?.tags : publishedblogs && publishedblogs.tags }</h1>
                         <span>{loading ? <div>0</div> : publishedblogs.filter(blog => blog.tags).length }</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae id deserunt omnis mollitia quia, eum pariatur fuga numquam libero praesentium natus laboriosam, cupiditate ad aliquam reiciendis velit consequatur molestias repellendus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo sapiente eligendi, dicta harum, quisquam sunt cupiditate autem sint, consequatur aut. Laboriosam excepturi incidunt unde impedit provident in veritatis architecto?</p>
                 </div>
                 <div className="category_blogs mt-3">
                     { loading ? <>
@@ -101,13 +101,13 @@ export default function TagsPage() {
                           <div className="blogtag">{item.tags[0]}</div>
                           </Link>
                           <Link href={`/blog/${item.slug}`}><h3>{item.title}</h3></Link>
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat tenetur non ab obcaecati nemo id repellendus assumenda corporis fugiat, repudiandae quaerat quasi tempora natus ad? Natus rerum libero at nemo!</p>
+                          <p>{item.description.substring(0,100)}</p>
                           <div className="blogauthor flex gap-1">
                             <div className="bloaimg">
                               {/* <img src="/img/Rangeet.png" alt="coder" /> */}
                             </div>
                             <div className="flex flex-col flex-left gap-05">
-                              <h4>Vbm coder</h4>
+                              <h4>Rangeet Nandy</h4>
                               <span>{new Date(item.createdAt).toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric' })}</span>
       
                             </div>

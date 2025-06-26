@@ -90,7 +90,7 @@ export default function blogPage() {
             <h1 className="slugtitle">
                 {loading ? <div>loading...</div> : blog && blog[0]?.title}
             </h1>
-            <h5>By <span>Vbm Coder</span>. Published in <span>{loading ? <div>loading..</div> :blog && blog[0]?.blogcategory }</span>. { blog && new Date(blog[0].createdAt).toLocaleDateString('en-US', { month: 'long' , day: 'numeric', year: 'numeric'})} <span>. 1 min read</span></h5>
+            <h5>By <span>Rangeet Nandy</span>. Published in <span>{loading ? <div>loading..</div> :blog && blog[0]?.blogcategory }</span>. { blog && new Date(blog[0].createdAt).toLocaleDateString('en-US', { month: 'long' , day: 'numeric', year: 'numeric'})} <span>. 1 min read</span></h5>
         </div>
         {/* blog data section */}
         <div className="flex flex-sb flex-left pb-5 flex-wrap">
