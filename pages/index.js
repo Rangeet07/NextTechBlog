@@ -66,7 +66,7 @@ const allblog = alldata.length;
         <div className="container flex flex-sb w-100">
           <div className="leftheader_info">
             <h1>HI, I'm <span>Rangeet.</span>. <br />
-             UX/UI Designer  </h1>
+              Frontend Developer.  </h1>
              <h3>Specialized in Javascript and Next Js</h3>
               <div className="flex gap-2">
                 <Link href="/contact"><button>Contact Me</button></Link>
